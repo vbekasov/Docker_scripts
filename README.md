@@ -11,6 +11,6 @@ Shell and Python scripts to make work with docker more easily.
 This commands run Dockers tty from Debian container and change dir to the Dockers VM to inspect volumes.
 
 ```sh
-~% docker run -it --name "tty-assist" --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
- % cd /var/lib/docker
+docker run -it --name "tty-assist" --privileged --pid=host ubuntu nsenter -t 1 -m -u -n -i sh
+cd /var/lib/docker
 ```
